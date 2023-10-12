@@ -90,7 +90,7 @@ async function downloadImages(json_path: string, output_path: string) {
       downloadImage(url, `./output/${output_path}/${i + 1}.png`),
       new Promise((resolve) => setTimeout(resolve, 300)),
     ]);
-    console.log(`Downloaded ${i + 1}.png`);
+    console.log(`Downloaded ${output_path}/${i + 1}.png`);
   }
 }
 
